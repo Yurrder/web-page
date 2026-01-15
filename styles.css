@@ -7,15 +7,15 @@ html{background-color: aliceblue;
 header{
     background-color: aliceblue; text-align: center; padding-bottom: 10px;
     h1{color: #1D546C; margin-top: 20px; margin-bottom: 15px;}
-    a{color: #1D546C; font-weight: bold; } 
-    .one{margin-right: 50px;}
+    a{color: #1D546C; font-weight: bold;} 
+    .nav{margin-right: 2rem;}
 }
 /*Cuerpo*/
 body{
     height: 100%; min-height: 100vh;
     display: flex; flex-direction: column;
     h2{color: #1D546C;} text-align: justify;
-    background-color: lightblue;
+    background-color: aliceblue;
 }
 
 main{
@@ -31,9 +31,11 @@ footer{
 /*Texto especial*/
 .agua{color: #1D546C;}
 .ctrt{text-align: center;}
+.other{color: aliceblue; background-color: green; padding: 1%; width: 120px;}
 
 /*Centrar imágenes*/
-.ctri{ display: block; margin-left: auto; margin-right: auto;
+.ctri{ display: block; margin-left: auto; margin-right: auto; width: 400px;
+    padding-bottom: 3vh;
 }
 
 /*Cursos*/
@@ -42,21 +44,26 @@ footer{
 }
 
 .cursos{
-    display: flex; flex-wrap: wrap; gap: 1rem;
+    display: flex; flex-direction: column; align-items: center; margin-top: 2%;
 }
 
-.cursos div{
-    background-color: lightblue;
-    flex: 0 0 calc(25% - 1rem); min-width: 0;
-    height: 30vh; display: flex;
-    h3{color: #1D546C; margin: 3%; text-align: left;}
+.cursos h3{
+    padding: 8px; color: #1D546C; margin: 8px; background-color: lightblue;
+    width: 30vw; text-align: center;
 }
 
 #cursos{
     padding-left: 2%; padding-right: 2%;
 }
 
-@media (max-width: 768px){
-    .cursos div{flex: 1 0 100%;}
+/*Changelog*/
+#clog{background-color: lightblue; padding: 10px;}
+
+#clog h3{
+    margin: 1%;
 }
 
+/*Bar*/
+hr{
+    background-color: #1D546C; height: 2px; margin-bottom: 20px auto; 
+}
