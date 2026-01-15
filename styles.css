@@ -1,69 +1,68 @@
-/*Diseño general*/
+/*General*/
 html{background-color: aliceblue; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 17px;
+    hr{background-color: #1D546C; height: 2px; margin-bottom: 20px auto;}
+    h1,h2,h3{color:#1D546C;}
 }
-/*Encabezado*/
+/*Header*/
 header{
     background-color: aliceblue; text-align: center; padding-bottom: 10px;
-    h1{color: #1D546C; margin-top: 20px; margin-bottom: 15px;}
+    h1{margin-top: 20px; margin-bottom: 15px;}
     a{color: #1D546C; font-weight: bold;} 
-    .nav{margin-right: 2rem;}
+    nav{display: flex; justify-content: center; gap: 5vw;}
 }
-/*Cuerpo*/
+/*Body*/
 body{
     height: 100%; min-height: 100vh;
     display: flex; flex-direction: column;
-    h2{color: #1D546C;} text-align: justify;
-    background-color: aliceblue;
+    text-align: justify;
 }
 
+/*Footer*/
 main{
     flex:1; padding-left:8%; padding-right:8%;
 }
 
-/*Pie de página*/
 footer{
-    background-color: aliceblue; color: #1D546C; padding-left: 20px;
-    font-weight: bold;
+    color: #1D546C; font-weight: bold; padding-left: 20px;
 }
 
-/*Texto especial*/
-.agua{color: #1D546C;}
-.ctrt{text-align: center;}
-.other{color: aliceblue; background-color: green; padding: 1%; width: 120px;}
-
-/*Centrar imágenes*/
-.ctri{ display: block; margin-left: auto; margin-right: auto; width: 400px;
-    padding-bottom: 3vh;
+/*Menu*/
+.menu{ 
+    display: flex; flex-direction: column; align-items: center;
+    margin-top: 2%;
+    h3{
+        background-color: lightblue; text-align: center;
+        width: 30vw; padding: 1%; margin: 1%; 
+        a{color: #1D546C;}
+    }
 }
 
-/*Cursos*/
-.blank{
-    background-color: aliceblue;
+/*Section*/
+.section{
+    background-color: lightblue; padding: 2%;
+    h3{margin: 0%;} h4{margin: 1%;}
 }
 
-.cursos{
-    display: flex; flex-direction: column; align-items: center; margin-top: 2%;
+/*Notes*/
+.notes{
+    h3,h4{color:black;}
 }
 
-.cursos h3{
-    padding: 8px; color: #1D546C; margin: 8px; background-color: lightblue;
-    width: 30vw; text-align: center; min-width: 400px;
+/*Formats*/
+.img{width: 40vw; display: block; 
+    margin-left: auto; margin-right: auto;
+    margin-top: 0; margin-bottom: 1rem;
+}
+.altxt{color: rebeccapurple;}
+.event{background-color: lavender; padding: 1%; 
+    h2{color: rebeccapurple; margin: 0%;} p{margin: 1%;}
 }
 
-#cursos{
-    padding-left: 2%; padding-right: 2%;
-}
-
-/*Changelog*/
-#clog{background-color: lightblue; padding: 10px;}
-
-#clog h3{
-    margin: 1%;
-}
-
-/*Bar*/
-hr{
-    background-color: #1D546C; height: 2px; margin-bottom: 20px auto; 
+/*Responsiveness*/
+@media screen and (max-width: 768px) {
+  .img{width: 90vw;}
+  .menu h3{width: 85vw; padding: 4%; margin: 2%;}
+  main{padding: 1%;}
+  ul{padding: 5%; margin: 0;}
 }
