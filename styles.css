@@ -49,7 +49,7 @@ footer{
 
 .cursos h3{
     padding: 8px; color: #1D546C; margin: 8px; background-color: lightblue;
-    width: 30vw; text-align: center;
+    width: 30vw; text-align: center; min-width: 400px;
 }
 
 #cursos{
