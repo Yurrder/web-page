@@ -54,7 +54,8 @@ footer{
     margin-left: auto; margin-right: auto;
     margin-top: 0; margin-bottom: 1rem;
 }
-.altxt{color: rebeccapurple;}
+.altxt1{color: rebeccapurple;}
+.altxt2{color: navy;}
 .event{background-color: lavender; padding: 1%; 
     h2{color: rebeccapurple; margin: 0%;} p{margin: 1%;}
 }
@@ -66,3 +67,6 @@ footer{
   main{padding: 1%;}
   ul{padding: 5%; margin: 0;}
 }
+
+/*Wikipedia*/
+.wiki{h3{text-align: center; color: aliceblue; background-color: #1D546C; padding: 1%;}}
